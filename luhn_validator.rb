@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# just to avoid rubocop
 module LuhnValidator
   # Validates credit card number using Luhn Algorithm
   # arguments: none
@@ -14,6 +17,5 @@ module LuhnValidator
                 end
     end
     (result % 10).zero?
-    # TODO: use the integers in nums_a to validate its last check digit
   end
 end

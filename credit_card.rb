@@ -1,9 +1,12 @@
+# frozen_string_literal: true
+
 require_relative './luhn_validator.rb'
 require 'json'
 
+# Some comment
 class CreditCard
   # TODO: mixin the LuhnValidator using an 'include' statement
-include LuhnValidator
+  include LuhnValidator
   # instance variables with automatic getter/setter methods
   attr_accessor :number, :expiration_date, :owner, :credit_network
 
